@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>PantryItem.qml</file>
+        <file>AddButton.qml</file>
+        <file>BasicText.qml</file>
+        <file>AddMenu.qml</file>
+        <file>MenuButton.qml</file>
+	<file>icons/image-24px.svg</file>
+	<file>icons/add_circle_outline-24px.svg</file>
+	<file>icons/delete_outline-24px.svg</file>
+    </qresource>
+</RCC>
