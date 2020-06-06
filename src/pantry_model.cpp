@@ -86,7 +86,7 @@ void PantryModel::deleteFoodItem(const int index)
     }
 
     beginRemoveRows({}, index, index);
-    _foodItems.takeAt(index);
+    delete _foodItems.takeAt(index);
     endRemoveRows();
     emit layoutChanged();
 }
