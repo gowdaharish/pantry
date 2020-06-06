@@ -68,14 +68,12 @@ void PantryModel::addFoodItem(const QString& name, const QString& exp)
 void PantryModel::updateFoodItem(const QModelIndex& index, const QString& name, const QString& exp)
 {
     auto data = _foodItems[index.row()];
-    qDebug() << "before name: " << data->name();
 
     if (data->name() != name)
         data->setName(name);
     else if (data->expiryDays() != exp)
         data->setExpiryDays(exp);
 
-    qDebug() << "after name: " << data->name();
     emit dataChanged(index,index);
 }
 
